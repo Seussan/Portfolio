@@ -105,9 +105,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-<!--                     <li class="nav-item">
-                        <a class="nav-link" href="#skills & activity">Skills & Activity</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -136,7 +136,7 @@
                 <div class="full-bg-img flex-center white-text">
                     <ul class="animated fadeIn col-md-12">
                         <li>
-                            <h1 class="h1-responsive">Inspiration is just a conversation away.</h1>
+                            <h1 class="h1-responsive">Inspiration is just a conversation away...</h1>
                         </li>
                     </ul>
                 </div>
@@ -197,7 +197,7 @@
     <br>
 
     <!--Content - First Row -->
-    <div class="container" id="portfolio">
+    <div class="container">
         <div class="row my-5">
             <!--First columnn-->
             <div class="col-lg-4">
@@ -335,10 +335,11 @@
                     </div>
 
                 </div>
+                <div id="about"></div> <!-- Best location to see About Me. -->
                 <!--/.Card-->
             </div>
             <!--Third columnn-->
-        </div>
+        </div id="about">  <!-- Need a second one here. -->
     </div>
     <!--/.Content - Second Row -->
 
@@ -349,22 +350,79 @@
         <div class="container-fluid">
             <div class="row">
 
+                <!--Skills Section-->
                 <!--First column-->
-                <div class="col-lg-5 col-md-6" id="about">
-                    <center><img src="./img/self/Susan3x4.jpg" class="wow fadeIn" width=200px></center>
+                <div class="col-lg-4 col-md-6 ml-auto" id="skills">
+                    <center><h5 class="title font-bold mt-3 mb-4">SKILLS</h5></center>
+                        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+                        <div class="w3-padding-64 w3-content" id="skills">
+                            <h6 class="title font-bold mt-3 mb-4">Front-end</h6>
+                            <h4>
+                                <i class="devicon-html5-plain-wordmark"></i>
+                                <i class="devicon-css3-plain-wordmark"></i>
+                                <i class="devicon-javascript-plain"></i>
+                                <i class="devicon-jquery-plain-wordmark"></i>
+                                <i class="devicon-bootstrap-plain-wordmark"></i>
+                                <!-- <i class="devicon-materialdesign-plain-wordmark"></i> -->
+                            </h4>
+                            <hr>
+                            <h6 class="title font-bold mt-3 mb-4">Back-end</h6>
+                            <h4>
+                                <i class="devicon-nodejs-plain"></i>
+                                <i class="devicon-express-original"></i>
+                                <i class="devicon-sequelize-plain"></i>
+                                <i class="devicon-mysql-plain"></i>
+                                <i class="devicon-mongodb-plain-wordmark"></i>
+                               <!-- <i class="devicon-mongoose-plain-wordmark"></i> -->
+                            </h4>
+                            <hr>
+                            <h6 class="title font-bold mt-3 mb-4">Cloud</h6>
+                            <h4>
+                                <i class="devicon-heroku-original-wordmark"></i>
+                                <i class="devicon-babel-plain"></i>
+                                <i class="devicon-webpack-plain"></i>
+                                <i class="devicon-react-original-wordmark"></i>
+                                <i class="devicon-visualstudio-plain"></i>
+                            </h4>
+                            <hr>
+                            <h6 class="title font-bold mt-3 mb-4">Other</h6>
+                            <h4>
+                                <i class="devicon-c-line"></i>
+                                <i class="devicon-git-plain-wordmark"></i>
+                                <i class="devicon-github-plain-wordmark"></i>
+                                <i class="devicon-gitlab-plain-wordmark"></i>
+                                <i class="devicon-slack-plain-wordmark"></i>
+                                <i class="devicon-csharp-line"></i>
+                                <i class="devicon-python-plain"></i>
+                                <i class="devicon-gimp-plain"></i>
+                            </h4>
+                        </div>
+                        <!--.Skills Section-->
                 </div>
                 <!--/.First column-->
 
                 <hr class="w-100 clearfix d-sm-none">
 
                 <!--Second column-->
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-4 col-md-6 ml-auto" id="about">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <center><img src="./img/self/Susan_3x4.jpg" class="wow fadeIn" width=200px></center>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Third column-->
+                <div class="col-lg-4 col-md-6 ml-auto">
                     <center><h5 class="title font-bold mt-3 mb-4">ABOUT ME</h5></center>
                     <p>I’ve been involved with computing since the early days of the first PCs and received a degree in Computer Science but over the years coding languages really progressed and I got left behind. I was thrilled to find a great Full Stack Web Development program which reignited that passion for computing I had long ago.</p>
 
-                    <p>I’m now looking for opportunities to combine my past experience with the latest coding techniques to transform business ideas into amazing applications.</p>
+                    <p>I am now looking for opportunities to combine my past experience with the latest coding techniques to transform business ideas into amazing applications.</p>
                 </div>
-                <!--/.Second column-->
+                <!--/.Third column-->
 
             </div>
         </div>
@@ -372,21 +430,42 @@
 
         <hr>
 
+        <!--Call to action-->
+        <div class="call-to-action">
+            <h4 class="mb-5">Contact me today... Let's see what inspiration can create.</h4>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://drive.google.com/file/d/0B3CspSyzZtZtOUVoZURKckZETmM/view?usp=sharing" class="btn btn-floating btn-social-all"><i class="fa fa-paperclip left"></i> Resume</a>
+                </li>
+                <li>
+                    <a target="_blank" href="#about" class="btn btn-floating btn-social-all" rel="nofollow"><i class="fa fa-phone left"></i> 904.860.8990</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.Call to action-->
+
         <!--Social buttons-->
+        <style>
+            .w3-button:hover{color:#000!important;background-color:#ccc!important}
+            .w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+            .w3-xlarge{font-size:24px!important}
+            .w3-circle{border-radius:100%}
+            .w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+        </style>
+
         <div class="text-center mb-3 wow fadeIn" data-wow-delay="0.2s" id="contact">
-            <a target="_blank" href="https://www.linkedin.com/in/susankallen1/" class="btn-floating btn-social-all "><i class="fa fa-linkedin left"></i></a>
-            <a target="_blank" href="https://github.com/Seussan" class="btn btn-floating btn-social-all "><i class="fa fa-github left"></i></a>
-            <a target="_blank" href="https://stackoverflow.com/users/7468292/susan-allen?tab=profile" class="btn-floating btn-social-all "><i class="fa fa-stack-overflow left"></i></a>
-            <a target="_blank" href="https://drive.google.com/file/d/0B3CspSyzZtZtOUVoZURKckZETmM/view?usp=sharing" class="btn-floating btn-social-all "><i class="fa fa-paperclip left"></i></a>
-            <a target="_blank" href="https://drive.google.com/file/d/0B3CspSyzZtZtOUVoZURKckZETmM/view?usp=sharing" class="btn-floating btn-social-all "><i class="fa fa-phone left"></i> 904.860.8990</a>
+            <a target="_blank" href="https://www.linkedin.com/in/susankallen1/" class="w3-button w3-xlarge w3-circle w3-card-4 btn btn-floating btn-social-all"><i class="fa fa-linkedin left"></i></a>
+
+            <a target="_blank" href="https://github.com/Seussan" class="w3-button w3-xlarge w3-circle w3-card-4 btn btn-floating btn-social-all"><i class="fa fa-github left"></i></a>
+
+            <a target="_blank" href="https://stackoverflow.com/users/7468292/susan-allen?tab=profile" class="w3-button w3-xlarge w3-circle w3-card-4 btn btn-floating btn-social-all"><i class="fa fa-stack-overflow left"></i></a>
         </div>
         <!--/.Social buttons-->
 
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2017 Copyright: Susan Allen
-
+                © 2017 Copyright: Susan K. Allen
             </div>
         </div>
         <!--/.Copyright-->
