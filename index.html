@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Susan Allen :: Web Developer</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        /* Necessary for full page carousel*/
+
+        html,
+        body {
+            height: 100%;
+        }
+        /* Navigation*/
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .top-nav-collapse {
+            background-color: #304a74;
+        }
+
+        footer.page-footer {
+            background-color: #304a74;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+
+        .scrolling-navbar {
+            -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+            transition: background .5s ease-in-out, padding .5s ease-in-out;
+        }
+        /* Carousel*/
+
+        .carousel {
+            height: 50%;
+        }
+
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+        /*Caption*/
+
+        .flex-center {
+            color: #fff;
+        }
+        .navbar .btn-group .dropdown-menu a:hover {
+            color: #000 !important;
+        }
+        .navbar .btn-group .dropdown-menu a:active {
+            color: #fff !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand font-bold" href="#">Susan K. Allen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+<!--                     <li class="nav-item">
+                        <a class="nav-link" href="#skills & activity">Skills & Activity</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-3" class="carousel slide carousel-fade white-text" data-ride="carousel" data-interval="false">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-3" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-3" data-slide-to="1"></li>
+            <li data-target="#carousel-example-3" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!-- First slide -->
+            <div class="carousel-item active view hm-black-light" style="background-image: url(img/carousel/water.jpeg); background-repeat: no-repeat; background-size: cover;">
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive">Inspiration is just a conversation away.</h1>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+            <!--/.First slide-->
+
+            <!-- Second slide -->
+            <div class="carousel-item view hm-black-light" style="background-image: url(img/carousel/sunnyDay.jpg); background-repeat: no-repeat; background-size: cover;">
+
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive">Creating is the best part of life.</h1>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+            <!--/.Second slide -->
+
+            <!-- Third slide -->
+            <div class="carousel-item view hm-black-light" style="background-image: url(img/carousel/starrySky.jpeg); background-repeat: no-repeat; background-size: cover;">
+
+                <!-- Caption -->
+                <div class="full-bg-img flex-center white-text">
+                    <ul class="animated fadeIn col-md-12">
+                        <li>
+                            <h1 class="h1-responsive">Let's build something amazing!</h1>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Caption -->
+
+            </div>
+            <!--/.Third slide-->
+        </div>
+        <!--/.Slides-->
+
+        <div id="portfolio"></div> <!-- Best location to see portfolio start. -->
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <br>
+
+    <!--Content - First Row -->
+    <div class="container" id="portfolio">
+        <div class="row my-5">
+            <!--First columnn-->
+            <div class="col-lg-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.2s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="./img/projects/MERNMusic.PNG" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">MERN Music</h4>
+                        <!--Text-->
+                        <p class="card-text">Use created code to run through a player piano... hear what you've written!</p>
+                        <a href="#https://seussan.github.io/MERN-Music/" class="btn btn-info">View Site</a>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="./img/projects/TrainScheduler.PNG" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">Train Scheduler</h4>
+                        <!--Text-->
+                        <p class="card-text">Train tracking and scheduling.</p>
+                        <a href="https://seussan.github.io/TrainScheduler/" class="btn btn-info">View Site</a>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-4 mb-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="./img/projects/GifTasticAnimalSearch.PNG" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">GifTastic Animal Search</h4>
+                        <!--Text-->
+                        <p class="card-text">Use predefined search buttons or create your own.</p>
+                        <a href="https://seussan.github.io/GifTastic/" class="btn btn-info">View Site</a>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+        </div>
+    </div>
+    <!--/.Content - First Row -->
+
+    <!--Content - Second Row -->
+    <div class="container">
+        <div class="row my-5">
+            <!--First columnn-->
+            <div class="col-lg-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.2s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="./img/projects/TriviaGame.PNG" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">Totally Trivial Trivia!</h4>
+                        <!--Text-->
+                        <p class="card-text">Metal Music Minded Trivia.</p>
+                        <a href="https://seussan.github.io/TriviaGame/" class="btn btn-info">View Site</a>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="./img/projects/HangmanGame.PNG" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">Hangman Game</h4>
+                        <!--Text-->
+                        <p class="card-text">Make guesses to guess the adult animated television series.</p>
+                        <a href="https://seussan.github.io/Hangman-Game/" class="btn btn-info">View Site</a>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-4 mb-4">
+                <!--Card-->
+                <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                    <!--Card image-->
+                    <img class="img-fluid" src="./img/projects/jQueryCrystalsCollector.PNG" alt="Card image cap">
+
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">jQuery Crystals Collector</h4>
+                        <!--Text-->
+                        <p class="card-text">Gather the perfect number of crystals that match the generated number!</p>
+                        <a href="https://seussan.github.io/week-4-game/" class="btn btn-info">View Site</a>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+        </div>
+    </div>
+    <!--/.Content - Second Row -->
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-5 col-md-6" id="about">
+                    <center><img src="./img/self/Susan3x4.jpg" class="wow fadeIn" width=200px></center>
+                </div>
+                <!--/.First column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Second column-->
+                <div class="col-lg-5 col-md-6">
+                    <center><h5 class="title font-bold mt-3 mb-4">ABOUT ME</h5></center>
+                    <p>I’ve been involved with computing since the early days of the first PCs and received a degree in Computer Science but over the years coding languages really progressed and I got left behind. I was thrilled to find a great Full Stack Web Development program which reignited that passion for computing I had long ago.</p>
+
+                    <p>I’m now looking for opportunities to combine my past experience with the latest coding techniques to transform business ideas into amazing applications.</p>
+                </div>
+                <!--/.Second column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Social buttons-->
+        <div class="text-center mb-3 wow fadeIn" data-wow-delay="0.2s" id="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/susankallen1/" class="btn-floating btn-social-all "><i class="fa fa-linkedin left"></i></a>
+            <a target="_blank" href="https://github.com/Seussan" class="btn btn-floating btn-social-all "><i class="fa fa-github left"></i></a>
+            <a target="_blank" href="https://stackoverflow.com/users/7468292/susan-allen?tab=profile" class="btn-floating btn-social-all "><i class="fa fa-stack-overflow left"></i></a>
+            <a target="_blank" href="https://drive.google.com/file/d/0B3CspSyzZtZtOUVoZURKckZETmM/view?usp=sharing" class="btn-floating btn-social-all "><i class="fa fa-paperclip left"></i></a>
+            <a target="_blank" href="https://drive.google.com/file/d/0B3CspSyzZtZtOUVoZURKckZETmM/view?usp=sharing" class="btn-floating btn-social-all "><i class="fa fa-phone left"></i> 904.860.8990</a>
+        </div>
+        <!--/.Social buttons-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: Susan Allen
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap dropdown -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
