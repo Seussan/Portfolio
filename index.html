@@ -43,7 +43,7 @@
 
         @media only screen and (max-width: 768px) {
             .navbar {
-                background-color: #4285F4;
+                background-color: #304a74;
             }
         }
 
@@ -100,13 +100,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#aboutme">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#aboutme">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -212,8 +212,8 @@
                         <!--Title-->
                         <h4 class="card-title">MERN Music</h4>
                         <!--Text-->
-                        <p class="card-text">Use created code to run through a player piano... hear what you've written!</p>
-                        <a href="#https://seussan.github.io/MERN-Music/" class="btn btn-info">View Site</a>
+                        <p class="card-text">Your html, css, javascript code comes to life through a player piano... hear what you've written!</p>
+                        <a href="#https://seussan.github.io/MERN-Music/" class="btn btn-info" target="_blank">View Site</a>
                     </div>
 
                 </div>
@@ -235,7 +235,7 @@
                         <h4 class="card-title">Train Scheduler</h4>
                         <!--Text-->
                         <p class="card-text">Train tracking and scheduling.</p>
-                        <a href="https://seussan.github.io/TrainScheduler/" class="btn btn-info">View Site</a>
+                        <a href="https://seussan.github.io/TrainScheduler/" class="btn btn-info" target="_blank">View Site</a>
                     </div>
 
                 </div>
@@ -258,7 +258,7 @@
                         <h4 class="card-title">GifTastic Animal Search</h4>
                         <!--Text-->
                         <p class="card-text">Use predefined search buttons or create your own.</p>
-                        <a href="https://seussan.github.io/GifTastic/" class="btn btn-info">View Site</a>
+                        <a href="https://seussan.github.io/GifTastic/" class="btn btn-info" target="_blank">View Site</a>
                     </div>
 
                 </div>
@@ -286,7 +286,7 @@
                         <h4 class="card-title">Totally Trivial Trivia!</h4>
                         <!--Text-->
                         <p class="card-text">Metal Music Minded Trivia.</p>
-                        <a href="https://seussan.github.io/TriviaGame/" class="btn btn-info">View Site</a>
+                        <a href="https://seussan.github.io/TriviaGame/" class="btn btn-info" target="_blank">View Site</a>
                     </div>
 
                 </div>
@@ -308,7 +308,7 @@
                         <h4 class="card-title">Hangman Game</h4>
                         <!--Text-->
                         <p class="card-text">Make guesses to guess the adult animated television series.</p>
-                        <a href="https://seussan.github.io/Hangman-Game/" class="btn btn-info">View Site</a>
+                        <a href="https://seussan.github.io/Hangman-Game/" class="btn btn-info" target="_blank">View Site</a>
                     </div>
 
                 </div>
@@ -331,15 +331,15 @@
                         <h4 class="card-title">jQuery Crystals Collector</h4>
                         <!--Text-->
                         <p class="card-text">Gather the perfect number of crystals that match the generated number!</p>
-                        <a href="https://seussan.github.io/week-4-game/" class="btn btn-info">View Site</a>
+                        <a href="https://seussan.github.io/week-4-game/" class="btn btn-info" target="_blank">View Site</a>
                     </div>
 
                 </div>
-                <div id="about"></div> <!-- Best location to see About Me. -->
+                <div id="aboutme"></div> <!-- Best location to land for About Me and skills section. -->
                 <!--/.Card-->
             </div>
             <!--Third columnn-->
-        </div id="about">  <!-- Need a second one here. -->
+        </div>
     </div>
     <!--/.Content - Second Row -->
 
@@ -347,13 +347,30 @@
     <footer class="page-footer center-on-small-only">
 
         <!--Footer Links-->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
 
-                <!--Skills Section-->
                 <!--First column-->
-                <div class="col-lg-4 col-md-6 ml-auto" id="skills">
-                    <center><h5 class="title font-bold mt-3 mb-4">SKILLS</h5></center>
+                <div class="col-lg-4 col-md-12 pl-5">
+                    <center><h5 class="title font-bold mt-5" id="aboutme">ABOUT ME</h5></center>
+                    <p>I’ve been involved with computing since the early days of the first PCs and received a degree in Computer Science but over the years coding languages really progressed and I got left behind. I was thrilled to find a great Full Stack Web Development program which reignited that passion for computing I had long ago.</p>
+
+                    <p>I am now looking for opportunities to combine my past experience with the latest coding techniques to transform business ideas into amazing applications.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-lg-4 col-md-12 pt-3 my-auto" id="about">
+                    <center><img src="./img/self/Susan_3x4.JPG" class="wow fadeIn" width=200px></center>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="w-100 clearfix d-sm-none">
+
+                <!--Skills Section-->
+                <!--Third column-->
+                <div class="col-lg-4 col-md-12 my-auto" id="skills">
+                    <h5 class="title font-bold mt-5 mb-4 pr-1">SKILLS</h5>
                         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
                         <div class="w3-padding-64 w3-content" id="skills">
                             <h6 class="title font-bold mt-3 mb-4">Front-end</h6>
@@ -363,6 +380,7 @@
                                 <i class="devicon-javascript-plain"></i>
                                 <i class="devicon-jquery-plain-wordmark"></i>
                                 <i class="devicon-bootstrap-plain-wordmark"></i>
+                                <i class="devicon-react-original-wordmark"></i>
                                 <!-- <i class="devicon-materialdesign-plain-wordmark"></i> -->
                             </h4>
                             <hr>
@@ -381,7 +399,6 @@
                                 <i class="devicon-heroku-original-wordmark"></i>
                                 <i class="devicon-babel-plain"></i>
                                 <i class="devicon-webpack-plain"></i>
-                                <i class="devicon-react-original-wordmark"></i>
                                 <i class="devicon-visualstudio-plain"></i>
                             </h4>
                             <hr>
@@ -399,28 +416,9 @@
                         </div>
                         <!--.Skills Section-->
                 </div>
-                <!--/.First column-->
-
-                <hr class="w-100 clearfix d-sm-none">
-
-                <!--Second column-->
-                <div class="col-lg-4 col-md-6 ml-auto" id="about">
-                    <br><br><br><br>
-                    <center><img src="./img/self/Susan_3x4.JPG" class="wow fadeIn" width=200px></center>
-                </div>
-                <!--/.Second column-->
-
-                <hr class="w-100 clearfix d-sm-none">
-
-                <!--Third column-->
-                <div class="col-lg-4 col-md-6 ml-auto">
-                    <center><h5 class="title font-bold mt-3 mb-4">ABOUT ME</h5></center>
-                    <p>I’ve been involved with computing since the early days of the first PCs and received a degree in Computer Science but over the years coding languages really progressed and I got left behind. I was thrilled to find a great Full Stack Web Development program which reignited that passion for computing I had long ago.</p>
-
-                    <p>I am now looking for opportunities to combine my past experience with the latest coding techniques to transform business ideas into amazing applications.</p>
-                </div>
                 <!--/.Third column-->
 
+                <hr class="w-100 clearfix d-sm-none">
             </div>
         </div>
         <!--/.Footer Links-->
